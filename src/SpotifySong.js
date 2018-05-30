@@ -17,7 +17,7 @@ componentWillReceiveProps(nextProps) {
 }
 
     fetchUserData = (props) => {
-        fetch(`https://api.spotify.com/v1/tracks${props.match.params.name}`)
+        fetch(`https://api.spotify.com/v1/tracks${props.match.params.id}`)
         .then(response => response.json())
         .then(user => this.setState({ user }))
         .catch(() => console.log('Well,shucks'))
@@ -26,7 +26,11 @@ componentWillReceiveProps(nextProps) {
         const { user } = this.state
         return (
             <div className="SpotifySong">
-                
+                {/* <img src={user.avatar_url} alt="" /> */}
+                <h2>{user.name}</h2>
+                {/* <h3>Followers: {user.followers}</h3> */}
+                {/* <h3>Following: {user.following}</h3> */}
+                {/* <h3>Location: {user.location}</h3> */}
             </div>
         )
     }

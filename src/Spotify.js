@@ -37,7 +37,7 @@ class Spotify extends Component {
                     <button type="submit">Look up Spotify song</button>
                 </div>
             </form>
-            <Route path="/spotify:username" component={SpotifySong} />
+            <Route path="/spotify:name" component={SpotifySong} />
             <Route exact path="/spotify" render={() => <h3>Please enter song name to search on Spotify</h3>} />
         </div>
         )
