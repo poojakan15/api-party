@@ -27,7 +27,7 @@ componentWillReceiveProps(nextProps) {
         return (
             <div className="SpotifySong">
                 {/* <img src={user.avatar_url} alt="" /> */}
-                <h2>{user.name}</h2>
+                <h2>{user.id}</h2>
                 {/* <h3>Followers: {user.followers}</h3> */}
                 {/* <h3>Following: {user.following}</h3> */}
                 {/* <h3>Location: {user.location}</h3> */}
